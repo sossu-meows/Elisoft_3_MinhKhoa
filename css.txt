@@ -1,0 +1,73 @@
+co 3 cach css
++inline
++external: <link rel="stylesheet" href="style.css" type"text/css" media="screen"
++internal
+
+<h1> selector
+{color:blue; font-size
+#tag : p
+ID: #main
+Class : .product{}
+lon nhat tag nhi class rồi tới id cách tác động theo câu phép vua thua lệ làng
+
+div #main .product (// khoang trang la nam trong)
+tat dong len tat ca class product nam trong id main, the id do nam trong the div
+ẽ dev p.test(Tac dong vao p trong div va p co class la test)
+div >p.test (tac dong voi doi tuong p phai la con cua dev
+
+li:hover >ul tac dong len trang thai,// tac dong len the ul la con cua li
+
+input + button : tac dong len button nam ngay sau input
+input ~ button: tac dong len tat ca nhung button nam sau input
+Psedoo
+a:visited{} //trang web da khong vao hoac vao se co mau khac nhau
+input :checked{} // nhung o radio neu da check se duoc add rule nay
+
+Attribute
+a[target] chuyen sang trang tab moi
+
+
+pseudo class 
+chay tu tren xuong duoi
+thu tu cua no nhu sau
+/* unvisited link */
+a:link {
+  color: red;
+}
+
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}	
+
+
+taget="_blank" de giup mo mot tab moi
+
+
+Property (thuoc tinh co the co 1 gia tri  hoac nhieu gia tri. Dau tru se co y nghia~ la phan cap)
+leeter-spacing khoang cach giua cac ki tu
+line-heigh gian cach giua cac dong
+text-decoration :
+text-shadow
+text-transform
+
+font **
+
+box-model tac dong len cac the block (<p>,...)
+
+
+
+box-sizing: border-box; // tu dong cau hinh theo width width co sie trung border
+
+@media screen and (min-width: 480px); // lon hon ban 480px thi su dung
+max-width 480px nho hon bang 480px

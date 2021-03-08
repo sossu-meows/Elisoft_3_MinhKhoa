@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 10px;
+            height: 100%;
+            
+        }
+
+        * {
+            box-sizing: border-box;
+            
+
+
+        }
+
+        header {
+            padding-top: 20px;
+            text-align: left;
+            background-color: bisque;
+            height: 100px;
+
+        }
+
+        nav {
+            background-color: lightgreen;
+            margin-bottom: 5px;
+            margin-top: 5px;
+            height: 40px
+        }
+
+        section {
+            height: 300px;
+            width: 19%;
+            background-color: lime;
+            float: left;
+
+        }
+
+        article {
+            background-color: lightgray;
+            float: left;
+            width: 60%;
+            height: 300px;
+            margin-left: 5px;
+            margin-right: 5px;
+            display: block;
+        }
+
+        article .sanpham {
+            padding-top: 5px;
+            margin: 5px;
+            float: left;
+            border: 2px solid blue;
+            width: 23%;
+            height: 46.5%;
+
+
+        }
+
+        article .sanpham button {
+            width: 30%;
+            height: 20%;
+            margin-left: 35%;
+            margin-top: 5px;
+
+
+        }
+
+        article .sanpham img {
+            padding: auto;
+            width: 45%;
+            height: 35%;
+            margin-left: 30%;
+
+        }
+
+        aside {
+            float: left;
+            display: block;
+            background-color: lime;
+            width: 20%;
+            height: 300px;
+            margin-bottom: 5px;
+        }
+
+        footer {
+            clear: left;
+            background-color: darkgoldenrod;
+            text-align: center;
+            height: 50px;
+            padding-top: 18px;
+            margin-top: 5px;
+            color: greenyellow;
+            text-transform: uppercase;
+        }
+
+        li {
+            list-style-type: none;
+            display: inline;
+
+            border-right: 2px dashed red;
+
+        }
+
+        li:last-child {
+            border-right: none;
+        }
+
+        li a {
+            text-align: center;
+            color: blue;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        ul {
+            list-style-type: square;
+            margin: 0;
+            padding: 10px;
+            overflow: hidden;
+        }
+
+        p {
+            padding-left: 30%;
+            margin: 2%;
+            text-transform: uppercase;
+            color: blue;
+
+        }
+
+        p#price {
+            color: red;
+            padding-left: 10px;
+            text-decoration-style: solid;
+            text-size-adjust: inherit;
+
+        }
+
+        button#show {
+            display: none;
+        }
+
+        @media screen and (min-width: 769px) and (max-width:1000px) {
+            aside {
+                display: none;
+            }
+
+            article {
+                background-color: lightgray;
+                float: left;
+                width: 60%;
+                height: 300px;
+                margin-left: 5px;
+                margin-right: 5px;
+                display: block;
+            }
+
+            article .sanpham {
+                padding-top: 5px;
+                margin: 5px;
+                float: left;
+                border: 2px solid blue;
+                width: 31.25%;
+                height: 46.5%;
+
+
+            }
+
+            article .sanpham button {
+                width: 30%;
+                height: 20%;
+                margin-left: 35%;
+                margin-top: 0px;
+
+
+            }
+
+            article .sanpham img {
+                padding: auto;
+                width: 45%;
+                height: 35%;
+                margin-left: 30%;
+
+            }
+
+            p#price {
+                padding-left: 18%;
+
+            }
+
+            p {
+                padding-left: 35%;
+            }
+
+        }
+
+        @media screen and (min-width:481px) and (max-width:768px) {
+            * {
+                width: 786px;
+            }
+
+            .dropdown {
+                display: none;
+            }
+
+            section {
+                width: 786px;
+                height: 50px;
+            }
+            aside {
+                width: 786px;
+                height: 50px;
+            }
+            p#price {
+                padding-left: 33%;
+
+            }
+            article {
+                width: 786px;
+                margin-top: 5px;
+                margin-left: 0px;
+                height: 900px;
+            }
+
+            article .sanpham {
+                padding-top: 5px;
+                margin: 5px;
+                float: left;
+                border: 2px solid blue;
+                width: 48%;
+                height: 32%;
+
+
+            }
+
+            article .sanpham button {
+                width: 30%;
+                height: 10%;
+                margin-left: 35%;
+                margin-top: 5px;
+
+
+            }
+
+            article .sanpham img {
+                padding: auto;
+                width: 45%;
+                height: 55%;
+                margin-left: 30%;
+
+            }
+
+            button#show {
+                display: block;
+                width: 35px;
+                height: 30px;
+                margin-top: -5px;
+            }
+
+            div nav ul.root > li > a {
+                display: none;
+            }
+            ul.sub > li > a {
+                display:none;
+            }
+            nav ul.root li button#show:hover > ul.sub > li > a {
+                background-color: red;
+                display: block;
+            }
+        }
+        @media screen and (max-width:480px) {
+            body{
+                width:480px;
+                overflow: scroll;
+            }
+            header{
+                width: 480px;
+            }
+            nav {
+                width: 480px;
+            }
+            section{
+                width:100%;
+                height: 100px;
+            }
+            article {
+                width: 100%;
+                margin-top: 5px;
+                margin-left: 0px;
+                width:100%;
+                height: 2000px;
+            }
+            aside{
+                width:100%;
+                height: 100px;
+            }
+            .dropdown{
+                display: none;
+            }
+            button#show {
+                display: block;
+                width: 35px;
+                height: 30px;
+                margin-top: -5px;
+            }
+            p#price {
+                padding-left: 40%;
+
+            }
+            article .sanpham {
+                padding-top: 0px;
+                margin: 0px;
+                float: left;
+                border: 2px solid blue;
+                width: 100%;
+                height: 327px;
+                margin-top: 5px;
+
+            }
+
+            article .sanpham button {
+                width: 30%;
+                height: 10%;
+                margin-left: 35%;
+                margin-top: 5px;
+
+
+            }
+
+            article .sanpham img {
+                padding: auto;
+                width: 45%;
+                height: 55%;
+                margin-left: 30%;
+
+            }
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <header>
+            <h3>LOGO</h3>
+        </header>
+
+        <nav>
+            <ul class="root">
+
+                <li>
+                <button id="show"> ...
+                    <ul class="sub">
+                        <li class="dropdown"><a href="#">Trang chủ</a></li>
+                        <li class="dropdown"><a href="#">Giới thiệu</a></li>
+                        <li class="dropdown"><a href="#">Sản phẩm</a></li>
+                        <li class="dropdown"><a href="#">Hướng dẫn</a></li>
+                        <li class="dropdown"><a href="#">Liên hệ</a></li>
+                    </ul>
+                </button>
+            </li>
+                <li class="dropdown"><a href="#">Trang chủ</a></li>
+                <li class="dropdown"><a href="#">Giới thiệu</a></li>
+                <li class="dropdown"><a href="#">Sản phẩm</a></li>
+                <li class="dropdown"><a href="#">Hướng dẫn</a></li>
+                <li class="dropdown"><a href="#">Liên hệ</a></li>
+
+            </ul>
+
+        </nav>
+        <section>
+            left
+        </section>
+        <article>
+
+            <div class="sanpham">
+                <p>Ten sp</p>
+                <img src="sp.png" alt="SanPham" id="sp_witdth">
+                <p id="price">12,000,000 VND</p>
+                <button>Mua</button>
+            </div>
+            <div class="sanpham">
+                <p>Ten Sp</p>
+                <img src="sp.png" alt="SanPham" id="sp_witdth">
+                <p id="price">12,000,000 VND</p>
+                <button>Mua</button>
+            </div>
+            <div class="sanpham">
+                <p>Ten Sp</p>
+                <img src="sp.png" alt="SanPham" id="sp_witdth">
+                <p id="price">12,000,000 VND</p>
+                <button>Mua</button>
+            </div>
+            <div class="sanpham">
+                <p>Ten Sp</p>
+                <img src="sp.png" alt="SanPham" id="sp_witdth">
+                <p id="price">12,000,000 VND</p>
+                <button>Mua</button>
+            </div>
+            <div class="sanpham">
+                <p>Ten Sp</p>
+                <img src="sp.png" alt="SanPham" id="sp_witdth">
+                <p id="price">12,000,000 VND</p>
+                <button>Mua</button>
+            </div>
+            <div class="sanpham">
+                <p>Ten Sp</p>
+                <img src="sp.png" alt="SanPham" id="sp_witdth">
+                <p id="price">12,000,000 VND</p>
+                <button>Mua</button>
+            </div>
+
+        </article>
+        <aside>
+            Right
+        </aside>
+        <footer>
+            COPY RIGHT
+        </footer>
+    </div>
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+        </script>
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .column{
+            float: left;
+            padding: 5px;
+        }
+        .footer{
+            text-align: center;
+        }
+        ul.root{
+            clear: both;
+            list-style-type: none;
+        }
+        li{
+            list-style-type: none;
+        }
+        ul.sub >li {
+            display: none;
+        }
+        ul.root > li button:hover ul.sub >li  {
+            background-color:red;
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Header</h1>
+    </div>
+    <div class="topnav">
+        <h2>topnav</h2>
+    </div>
+    <div class="row">
+        <div class="column">
+            <p>fdjahfjff</p>
+        </div>
+        <div class="column">
+            <p>sahdsjdhs</p>
+        </div>
+    </div>
+    <div class="footer">
+        <h2>Footer</h2>
+    </div>
+    <ul class="root">
+        <li>
+            <button >hehe
+                <ul class="sub">
+                    <li>asdasd</li>
+                </ul>
+            </button>
+        </li>
+        <li>hello</li>
+        
+    </ul>
+    
+</body>
+</html>

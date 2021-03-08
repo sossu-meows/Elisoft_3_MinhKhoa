@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            
+        }
+        header{
+            width:1000px;  
+            height:100px;   
+            background-color: darkkhaki;
+        }
+        nav{
+            width:1000px;
+            height:50px;
+            background-color:darkcyan;
+            
+        }
+        section{
+            background-color:darkseagreen;
+            width:200px;
+            height:300px;
+            float:left;
+            
+            margin-top: 5px;
+        }
+        article{
+            float: left;
+            width:595px;
+            height:300px;
+            background-color:#9e9d9d;
+            margin: 5px 5px 5px 5px;
+        }
+        aside{
+            background-color:darkseagreen;
+            width:195px;
+            height:300px;
+            float:left;
+            margin-top: 5px;
+        }
+        footer{
+            clear:left;
+            text-align:center;
+            background-color:khaki;
+            height: 100px;
+            width: 1000px;
+            padding-top: 40px;
+        }
+        ul.root {
+
+            list-style-type: none;
+            
+        }
+        
+        nav ul.root > li {
+            float: left;
+            padding:5px;
+            
+        }
+        nav ul.root > li > a {
+            position:relative;
+            display:block;
+            color: white;
+            text-decoration: none; 
+            margin: 0px auto;
+            padding : 0px 5px 0px 5px;
+            line-height: 40px;
+        }
+        nav ul li a:hover {
+            background-color:teal;
+        }
+        ul.sub {
+            margin:4px;
+            display: none ;
+            position:absolute;
+            background-color:darkgrey;
+            
+
+        }
+        ul.sub > li {
+            list-style-type: none;
+            padding:-10px;
+        }
+        ul.sub li > a {
+            color: blueviolet;
+            margin-left: 0px;
+            text-decoration: none;
+            line-height: 30px;
+            text-indent: 20px;
+            padding : 0px 5px 0px 5px;
+            margin-left: -25px;
+            
+            
+        }
+        ul.root li:hover > ul.sub{
+            display: block;
+        }
+        
+        ul.sub2 {
+            display: none;
+            list-style-type: none;
+            position:absolute;
+            left:97px;
+            top: 35px;
+            background-color:darkseagreen;
+        }
+        ul.sub li:hover > ul.sub2{
+            display: block;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        Logo
+    </header>
+    <nav>
+        <ul class="root">
+            <li><a href="#">Trang Chu</a></li>
+            <li><a href="#">Gioi thieu</a></li>
+            <li>
+                <a href="#">Sản Phẩm</a>
+                <ul class ="sub">
+                    <li>    
+                        <a href="#">Máy Tính</a>
+                        
+                    </li>
+                    <li>
+                        <a href="#">Điện Thoại</a>
+                        <ul class = "sub2">
+                            <li>
+                                <a href="#">Iphone</a>
+                            </li>
+                            <li><a href="#">Samsum</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Huong Dan</a>
+            </li>
+            <li><a href="#">Lien He</a></li>
+        </ul>
+    </nav>
+    <section>
+        Left
+    </section>
+    <article>
+
+    </article>
+    <aside>
+        Right;
+    </aside>
+    <footer>
+        Copyright 20XXCo.Ltd All Rights Reserved
+    </footer>
+</body>
+</html>

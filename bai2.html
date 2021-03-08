@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            width: 1000px;
+            
+        }
+
+        header {
+            padding-top: 20px;
+            text-align: left;
+            background-color: bisque;
+            height: 100px;
+
+        }
+
+        nav {
+            background-color: lightgreen;
+            margin-bottom: 5px;
+            margin-top: 5px;
+            height: 40px
+        }
+
+        section {
+            height: 300px;
+            width: 19%;
+            background-color: lime;
+            float: left;
+
+        }
+
+        article {
+            background-color: lightgray;
+            float: left;
+            width: 60%;
+            height: 300px;
+            margin-left: 5px;
+            margin-right: 5px;
+            display: block;
+        }
+
+        article .sanpham {
+            padding-top: 5px;
+            margin: 5px;
+            float: left;
+            border: 2px solid blue;
+            width: 23%;
+            height: 46.5%;
+
+
+        }
+        article .sanpham button{
+            width:30%;
+            height: 20%;
+            margin-left: 35%;
+            margin-top: 5px;
+            
+
+        }
+
+        article .sanpham img {
+            padding:auto;
+            width: 45%;
+            height: 35%;
+            margin-left: 30%;
+
+        }
+
+        aside {
+            float: left;
+            display: block;
+            background-color: lime;
+            width: 20%;
+            height: 300px;
+            margin-bottom: 5px;
+        }
+
+        footer {
+            clear: left;
+            background-color: darkgoldenrod;
+            text-align: center;
+            height: 50px;
+            padding-top: 18px;
+            margin-top: 5px;
+            color: greenyellow;
+            text-transform: uppercase;
+        }
+
+        li {
+            list-style-type: none;
+            display: inline;
+
+            border-right: 2px dashed red;
+        }
+        li:last-child{
+            border-right: none;
+        }
+        li a {
+            text-align: center;
+            color: blue;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        ul {
+            list-style-type: square;
+            margin: 0;
+            padding: 10px;
+            overflow: hidden;
+        }
+        p  {
+            padding-left: 30%;
+            margin: 2%;
+            text-transform : uppercase ;
+            color: blue;
+            
+        }
+        p#price{
+            color: red;
+            padding-left: 10px;
+            text-decoration-style: solid;
+            text-size-adjust: inherit;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <header>
+            <h3>LOGO</h3>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#">Trang chủ</a></li>
+                <li><a href="#">Giới thiệu</a></li>
+                <li><a href="#">Sản phẩm</a></li>
+                <li><a href="#">Hướng dẫn</a></li>
+                <li><a href="#">Liên hệ</a></li>
+            </ul>
+
+        </nav>
+        <section>
+            left
+        </section>
+        <article>
+
+            <div class="sanpham">
+                <p>Ten sp</p>
+                <img src="sp.png" alt="SanPham" id="sp_witdth">
+                <p id="price">12,000,000   VND</p>
+                <button>Mua</button>
+            </div>
+            <div class="sanpham">
+                <p>Ten Sp</p>
+                <img src="sp.png" alt="SanPham" id="sp_witdth">
+                <p id="price">12,000,000   VND</p>
+                <button>Mua</button>
+            </div>
+            <div class="sanpham">
+                <p>Ten Sp</p>
+                <img src="sp.png" alt="SanPham" id="sp_witdth">
+                <p id="price">12,000,000   VND</p>
+                <button>Mua</button>
+            </div>
+            <div class="sanpham">
+                <p>Ten Sp</p>
+                <img src="sp.png" alt="SanPham" id="sp_witdth">
+                <p id="price">12,000,000   VND</p>
+                <button>Mua</button>
+            </div>
+            <div class="sanpham">
+                <p>Ten Sp</p>
+                <img src="sp.png" alt="SanPham" id="sp_witdth">
+                <p id="price">12,000,000   VND</p>
+                <button>Mua</button>
+            </div>
+            <div class="sanpham">
+                <p>Ten Sp</p>
+                <img src="sp.png" alt="SanPham" id="sp_witdth">
+                <p id="price">12,000,000   VND</p>
+                <button>Mua</button>
+            </div>
+                                                                                        
+        </article>
+        <aside>
+            Right
+        </aside>
+        <footer>
+            COPY RIGHT
+        </footer>
+    </div>
+</body>
+
+</html>
